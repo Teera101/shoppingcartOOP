@@ -31,11 +31,11 @@
             tbCoffeePrice = new TextBox();
             tbGreenteaPrice = new TextBox();
             chbCoffee = new CheckBox();
-            chbGreetea = new CheckBox();
+            chbGreentea = new CheckBox();
             tbTotal = new TextBox();
             button1 = new Button();
             label1 = new Label();
-            tbCoffeQuantity = new TextBox();
+            tbCoffeeQuantity = new TextBox();
             tbGreenteaQuantity = new TextBox();
             SuspendLayout();
             // 
@@ -63,15 +63,15 @@
             chbCoffee.Text = "Coffee";
             chbCoffee.UseVisualStyleBackColor = true;
             // 
-            // chbGreetea
+            // chbGreentea
             // 
-            chbGreetea.AutoSize = true;
-            chbGreetea.Location = new Point(144, 86);
-            chbGreetea.Name = "chbGreetea";
-            chbGreetea.Size = new Size(108, 29);
-            chbGreetea.TabIndex = 4;
-            chbGreetea.Text = "Greentea";
-            chbGreetea.UseVisualStyleBackColor = true;
+            chbGreentea.AutoSize = true;
+            chbGreentea.Location = new Point(144, 86);
+            chbGreentea.Name = "chbGreentea";
+            chbGreentea.Size = new Size(108, 29);
+            chbGreentea.TabIndex = 4;
+            chbGreentea.Text = "Greentea";
+            chbGreentea.UseVisualStyleBackColor = true;
             // 
             // tbTotal
             // 
@@ -88,22 +88,23 @@
             button1.TabIndex = 6;
             button1.Text = "Check out";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Location = new Point(412, 148);
             label1.Name = "label1";
-            label1.Size = new Size(59, 25);
+            label1.Size = new Size(72, 25);
             label1.TabIndex = 7;
-            label1.Text = "label1";
+            label1.Text = "ราคารวม";
             // 
-            // tbCoffeQuantity
+            // tbCoffeeQuantity
             // 
-            tbCoffeQuantity.Location = new Point(520, 33);
-            tbCoffeQuantity.Name = "tbCoffeQuantity";
-            tbCoffeQuantity.Size = new Size(150, 31);
-            tbCoffeQuantity.TabIndex = 8;
+            tbCoffeeQuantity.Location = new Point(520, 33);
+            tbCoffeeQuantity.Name = "tbCoffeeQuantity";
+            tbCoffeeQuantity.Size = new Size(150, 31);
+            tbCoffeeQuantity.TabIndex = 8;
             // 
             // tbGreenteaQuantity
             // 
@@ -118,11 +119,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1046, 317);
             Controls.Add(tbGreenteaQuantity);
-            Controls.Add(tbCoffeQuantity);
+            Controls.Add(tbCoffeeQuantity);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(tbTotal);
-            Controls.Add(chbGreetea);
+            Controls.Add(chbGreentea);
             Controls.Add(chbCoffee);
             Controls.Add(tbGreenteaPrice);
             Controls.Add(tbCoffeePrice);
@@ -137,11 +138,11 @@
         private TextBox tbCoffeePrice;
         private TextBox tbGreenteaPrice;
         private CheckBox chbCoffee;
-        private CheckBox chbGreetea;
+        private CheckBox chbGreentea;
         private TextBox tbTotal;
         private Button button1;
         private Label label1;
-        private TextBox tbCoffeQuantity;
+        private TextBox tbCoffeeQuantity;
         private TextBox tbGreenteaQuantity;
     }
 }
