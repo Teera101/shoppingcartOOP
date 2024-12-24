@@ -9,20 +9,20 @@
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string strCoffeePrice = tbCoffeePrice.Text; 
+            string strCoffeePrice = tbCoffeePrice.Text;
             string strCoffeeQuantity = tbCoffeeQuantity.Text;
             int iCoffeePrice = 0;
             int iCoffeeQuantity = 0;
             try
             {
-                if (chbCoffee.Checked) 
+                if (chbCoffee.Checked)
                 {
                     iCoffeePrice = int.Parse(strCoffeePrice);
                     iCoffeeQuantity = int.Parse(strCoffeeQuantity);
                 }
-                
+
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 iCoffeePrice = 0;
                 iCoffeeQuantity = 0;
@@ -39,7 +39,7 @@
                     iGreenteaQuantity = int.Parse(strGreenteaQuantity);
                 }
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
                 iGreenteaPrice = 0;
                 iGreenteaQuantity = 0;
@@ -49,6 +49,11 @@
             int iTotal = iCoffeeTotal + iGreenteaTotal;
 
             tbTotal.Text = iTotal.ToString();
+
+        }
+
+        private void tbCoffeeQuantity_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
