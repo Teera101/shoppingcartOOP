@@ -79,14 +79,14 @@
             // 
             // tbTotal
             // 
-            tbTotal.Location = new Point(603, 139);
+            tbTotal.Location = new Point(1024, 36);
             tbTotal.Name = "tbTotal";
             tbTotal.Size = new Size(150, 31);
             tbTotal.TabIndex = 5;
             // 
             // button1
             // 
-            button1.Location = new Point(833, 28);
+            button1.Location = new Point(802, 28);
             button1.Name = "button1";
             button1.Size = new Size(112, 142);
             button1.TabIndex = 6;
@@ -97,7 +97,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(519, 145);
+            label1.Location = new Point(929, 39);
             label1.Name = "label1";
             label1.Size = new Size(72, 25);
             label1.TabIndex = 7;
