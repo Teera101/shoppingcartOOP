@@ -63,22 +63,22 @@
             tb1 = new TextBox();
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            tbPizzaPrice = new TextBox();
+            tbPastaPrice = new TextBox();
+            tbPizzaQuantity = new TextBox();
+            tbPastaQuantity = new TextBox();
+            chbPizza = new CheckBox();
+            chbPasta = new CheckBox();
             groupBox3 = new GroupBox();
-            checkBox3 = new CheckBox();
-            checkBox4 = new CheckBox();
-            checkBox5 = new CheckBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            label16 = new Label();
-            label17 = new Label();
             label18 = new Label();
+            label17 = new Label();
+            label16 = new Label();
+            tbDiscountFood = new TextBox();
+            tbDiscountBeverage = new TextBox();
+            tbDiscountAll = new TextBox();
+            chbFood = new CheckBox();
+            chbBeverage = new CheckBox();
+            chbAll = new CheckBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -127,9 +127,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(695, 479);
+            button1.Location = new Point(678, 449);
             button1.Name = "button1";
-            button1.Size = new Size(112, 142);
+            button1.Size = new Size(150, 133);
             button1.TabIndex = 6;
             button1.Text = "Check out";
             button1.UseVisualStyleBackColor = true;
@@ -369,12 +369,12 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(textBox4);
-            groupBox2.Controls.Add(textBox3);
-            groupBox2.Controls.Add(textBox2);
-            groupBox2.Controls.Add(textBox1);
-            groupBox2.Controls.Add(checkBox2);
-            groupBox2.Controls.Add(checkBox1);
+            groupBox2.Controls.Add(tbPizzaPrice);
+            groupBox2.Controls.Add(tbPastaPrice);
+            groupBox2.Controls.Add(tbPizzaQuantity);
+            groupBox2.Controls.Add(tbPastaQuantity);
+            groupBox2.Controls.Add(chbPizza);
+            groupBox2.Controls.Add(chbPasta);
             groupBox2.Location = new Point(27, 153);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(505, 124);
@@ -382,65 +382,65 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Food";
             // 
-            // checkBox1
+            // tbPizzaPrice
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(15, 33);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(79, 29);
-            checkBox1.TabIndex = 36;
-            checkBox1.Text = "Pasta";
-            checkBox1.UseVisualStyleBackColor = true;
+            tbPizzaPrice.Location = new Point(319, 74);
+            tbPizzaPrice.Name = "tbPizzaPrice";
+            tbPizzaPrice.Size = new Size(150, 31);
+            tbPizzaPrice.TabIndex = 41;
             // 
-            // checkBox2
+            // tbPastaPrice
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(17, 74);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(77, 29);
-            checkBox2.TabIndex = 37;
-            checkBox2.Text = "Pizza";
-            checkBox2.UseVisualStyleBackColor = true;
+            tbPastaPrice.Location = new Point(319, 30);
+            tbPastaPrice.Name = "tbPastaPrice";
+            tbPastaPrice.Size = new Size(150, 31);
+            tbPastaPrice.TabIndex = 40;
             // 
-            // textBox1
+            // tbPizzaQuantity
             // 
-            textBox1.Location = new Point(150, 30);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 31);
-            textBox1.TabIndex = 38;
+            tbPizzaQuantity.Location = new Point(150, 74);
+            tbPizzaQuantity.Name = "tbPizzaQuantity";
+            tbPizzaQuantity.Size = new Size(150, 31);
+            tbPizzaQuantity.TabIndex = 39;
             // 
-            // textBox2
+            // tbPastaQuantity
             // 
-            textBox2.Location = new Point(150, 74);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 31);
-            textBox2.TabIndex = 39;
+            tbPastaQuantity.Location = new Point(150, 30);
+            tbPastaQuantity.Name = "tbPastaQuantity";
+            tbPastaQuantity.Size = new Size(150, 31);
+            tbPastaQuantity.TabIndex = 38;
             // 
-            // textBox3
+            // chbPizza
             // 
-            textBox3.Location = new Point(319, 30);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(150, 31);
-            textBox3.TabIndex = 40;
+            chbPizza.AutoSize = true;
+            chbPizza.Location = new Point(17, 74);
+            chbPizza.Name = "chbPizza";
+            chbPizza.Size = new Size(77, 29);
+            chbPizza.TabIndex = 37;
+            chbPizza.Text = "Pizza";
+            chbPizza.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // chbPasta
             // 
-            textBox4.Location = new Point(319, 74);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(150, 31);
-            textBox4.TabIndex = 41;
+            chbPasta.AutoSize = true;
+            chbPasta.Location = new Point(15, 33);
+            chbPasta.Name = "chbPasta";
+            chbPasta.Size = new Size(79, 29);
+            chbPasta.TabIndex = 36;
+            chbPasta.Text = "Pasta";
+            chbPasta.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
             groupBox3.Controls.Add(label18);
             groupBox3.Controls.Add(label17);
             groupBox3.Controls.Add(label16);
-            groupBox3.Controls.Add(textBox7);
-            groupBox3.Controls.Add(textBox6);
-            groupBox3.Controls.Add(textBox5);
-            groupBox3.Controls.Add(checkBox5);
-            groupBox3.Controls.Add(checkBox4);
-            groupBox3.Controls.Add(checkBox3);
+            groupBox3.Controls.Add(tbDiscountFood);
+            groupBox3.Controls.Add(tbDiscountBeverage);
+            groupBox3.Controls.Add(tbDiscountAll);
+            groupBox3.Controls.Add(chbFood);
+            groupBox3.Controls.Add(chbBeverage);
+            groupBox3.Controls.Add(chbAll);
             groupBox3.Location = new Point(27, 301);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(505, 198);
@@ -448,65 +448,14 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "Discount";
             // 
-            // checkBox3
+            // label18
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(15, 46);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(58, 29);
-            checkBox3.TabIndex = 0;
-            checkBox3.Text = "All";
-            checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(15, 92);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(110, 29);
-            checkBox4.TabIndex = 1;
-            checkBox4.Text = "Beverage";
-            checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(15, 137);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(80, 29);
-            checkBox5.TabIndex = 2;
-            checkBox5.Text = "Food";
-            checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(250, 44);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(150, 31);
-            textBox5.TabIndex = 3;
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(250, 90);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(150, 31);
-            textBox6.TabIndex = 4;
-            // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(250, 137);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(150, 31);
-            textBox7.TabIndex = 5;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Location = new Point(406, 46);
-            label16.Name = "label16";
-            label16.Size = new Size(27, 25);
-            label16.TabIndex = 6;
-            label16.Text = "%";
+            label18.AutoSize = true;
+            label18.Location = new Point(406, 138);
+            label18.Name = "label18";
+            label18.Size = new Size(27, 25);
+            label18.TabIndex = 8;
+            label18.Text = "%";
             // 
             // label17
             // 
@@ -517,14 +466,65 @@
             label17.TabIndex = 7;
             label17.Text = "%";
             // 
-            // label18
+            // label16
             // 
-            label18.AutoSize = true;
-            label18.Location = new Point(406, 138);
-            label18.Name = "label18";
-            label18.Size = new Size(27, 25);
-            label18.TabIndex = 8;
-            label18.Text = "%";
+            label16.AutoSize = true;
+            label16.Location = new Point(406, 46);
+            label16.Name = "label16";
+            label16.Size = new Size(27, 25);
+            label16.TabIndex = 6;
+            label16.Text = "%";
+            // 
+            // tbDiscountFood
+            // 
+            tbDiscountFood.Location = new Point(250, 137);
+            tbDiscountFood.Name = "tbDiscountFood";
+            tbDiscountFood.Size = new Size(150, 31);
+            tbDiscountFood.TabIndex = 5;
+            // 
+            // tbDiscountBeverage
+            // 
+            tbDiscountBeverage.Location = new Point(250, 90);
+            tbDiscountBeverage.Name = "tbDiscountBeverage";
+            tbDiscountBeverage.Size = new Size(150, 31);
+            tbDiscountBeverage.TabIndex = 4;
+            // 
+            // tbDiscountAll
+            // 
+            tbDiscountAll.Location = new Point(250, 44);
+            tbDiscountAll.Name = "tbDiscountAll";
+            tbDiscountAll.Size = new Size(150, 31);
+            tbDiscountAll.TabIndex = 3;
+            // 
+            // chbFood
+            // 
+            chbFood.AutoSize = true;
+            chbFood.Location = new Point(15, 137);
+            chbFood.Name = "chbFood";
+            chbFood.Size = new Size(80, 29);
+            chbFood.TabIndex = 2;
+            chbFood.Text = "Food";
+            chbFood.UseVisualStyleBackColor = true;
+            // 
+            // chbBeverage
+            // 
+            chbBeverage.AutoSize = true;
+            chbBeverage.Location = new Point(15, 92);
+            chbBeverage.Name = "chbBeverage";
+            chbBeverage.Size = new Size(110, 29);
+            chbBeverage.TabIndex = 1;
+            chbBeverage.Text = "Beverage";
+            chbBeverage.UseVisualStyleBackColor = true;
+            // 
+            // chbAll
+            // 
+            chbAll.AutoSize = true;
+            chbAll.Location = new Point(15, 46);
+            chbAll.Name = "chbAll";
+            chbAll.Size = new Size(58, 29);
+            chbAll.TabIndex = 0;
+            chbAll.Text = "All";
+            chbAll.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -610,21 +610,21 @@
         private TextBox tb1;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
-        private CheckBox checkBox1;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private CheckBox checkBox2;
+        private CheckBox chbPasta;
+        private TextBox tbPizzaPrice;
+        private TextBox tbPastaPrice;
+        private TextBox tbPizzaQuantity;
+        private TextBox tbPastaQuantity;
+        private CheckBox chbPizza;
         private GroupBox groupBox3;
-        private CheckBox checkBox5;
-        private CheckBox checkBox4;
-        private CheckBox checkBox3;
+        private CheckBox chbFood;
+        private CheckBox chbBeverage;
+        private CheckBox chbAll;
         private Label label18;
         private Label label17;
         private Label label16;
-        private TextBox textBox7;
-        private TextBox textBox6;
-        private TextBox textBox5;
+        private TextBox tbDiscountFood;
+        private TextBox tbDiscountBeverage;
+        private TextBox tbDiscountAll;
     }
 }
