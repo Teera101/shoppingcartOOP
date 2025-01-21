@@ -62,6 +62,8 @@
             tb5 = new TextBox();
             tb1 = new TextBox();
             groupBox1 = new GroupBox();
+            label19 = new Label();
+            label20 = new Label();
             groupBox2 = new GroupBox();
             tbPizzaPrice = new TextBox();
             tbPastaPrice = new TextBox();
@@ -88,6 +90,7 @@
             // 
             tbCoffeePrice.Location = new Point(320, 30);
             tbCoffeePrice.Name = "tbCoffeePrice";
+            tbCoffeePrice.ReadOnly = true;
             tbCoffeePrice.Size = new Size(150, 31);
             tbCoffeePrice.TabIndex = 1;
             // 
@@ -95,6 +98,7 @@
             // 
             tbGreenteaPrice.Location = new Point(320, 69);
             tbGreenteaPrice.Name = "tbGreenteaPrice";
+            tbGreenteaPrice.ReadOnly = true;
             tbGreenteaPrice.Size = new Size(150, 31);
             tbGreenteaPrice.TabIndex = 2;
             // 
@@ -107,6 +111,7 @@
             chbCoffee.TabIndex = 3;
             chbCoffee.Text = "Coffee";
             chbCoffee.UseVisualStyleBackColor = true;
+            chbCoffee.CheckedChanged += chbCoffee_CheckedChanged;
             // 
             // chbGreentea
             // 
@@ -122,6 +127,7 @@
             // 
             tbTotal.Location = new Point(678, 30);
             tbTotal.Name = "tbTotal";
+            tbTotal.ReadOnly = true;
             tbTotal.Size = new Size(150, 31);
             tbTotal.TabIndex = 5;
             // 
@@ -293,6 +299,7 @@
             // 
             tbChange.Location = new Point(678, 107);
             tbChange.Name = "tbChange";
+            tbChange.ReadOnly = true;
             tbChange.Size = new Size(150, 31);
             tbChange.TabIndex = 25;
             // 
@@ -300,6 +307,7 @@
             // 
             tb1000.Location = new Point(678, 144);
             tb1000.Name = "tb1000";
+            tb1000.ReadOnly = true;
             tb1000.Size = new Size(150, 31);
             tb1000.TabIndex = 26;
             // 
@@ -307,6 +315,7 @@
             // 
             tb500.Location = new Point(678, 184);
             tb500.Name = "tb500";
+            tb500.ReadOnly = true;
             tb500.Size = new Size(150, 31);
             tb500.TabIndex = 27;
             // 
@@ -314,6 +323,7 @@
             // 
             tb100.Location = new Point(678, 224);
             tb100.Name = "tb100";
+            tb100.ReadOnly = true;
             tb100.Size = new Size(150, 31);
             tb100.TabIndex = 28;
             // 
@@ -321,6 +331,7 @@
             // 
             tb50.Location = new Point(678, 264);
             tb50.Name = "tb50";
+            tb50.ReadOnly = true;
             tb50.Size = new Size(150, 31);
             tb50.TabIndex = 29;
             // 
@@ -328,6 +339,7 @@
             // 
             tb20.Location = new Point(678, 301);
             tb20.Name = "tb20";
+            tb20.ReadOnly = true;
             tb20.Size = new Size(150, 31);
             tb20.TabIndex = 30;
             // 
@@ -335,6 +347,7 @@
             // 
             tb10.Location = new Point(678, 338);
             tb10.Name = "tb10";
+            tb10.ReadOnly = true;
             tb10.Size = new Size(150, 31);
             tb10.TabIndex = 31;
             // 
@@ -342,6 +355,7 @@
             // 
             tb5.Location = new Point(678, 375);
             tb5.Name = "tb5";
+            tb5.ReadOnly = true;
             tb5.Size = new Size(150, 31);
             tb5.TabIndex = 32;
             // 
@@ -349,11 +363,14 @@
             // 
             tb1.Location = new Point(678, 412);
             tb1.Name = "tb1";
+            tb1.ReadOnly = true;
             tb1.Size = new Size(150, 31);
             tb1.TabIndex = 33;
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(label19);
+            groupBox1.Controls.Add(label20);
             groupBox1.Controls.Add(tbGreenteaPrice);
             groupBox1.Controls.Add(chbCoffee);
             groupBox1.Controls.Add(chbGreentea);
@@ -366,6 +383,24 @@
             groupBox1.TabIndex = 34;
             groupBox1.TabStop = false;
             groupBox1.Text = "Beverage";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(365, 0);
+            label19.Name = "label19";
+            label19.Size = new Size(46, 25);
+            label19.TabIndex = 37;
+            label19.Text = "ราคา";
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(182, 0);
+            label20.Name = "label20";
+            label20.Size = new Size(59, 25);
+            label20.TabIndex = 38;
+            label20.Text = "จำนวน";
             // 
             // groupBox2
             // 
@@ -386,6 +421,7 @@
             // 
             tbPizzaPrice.Location = new Point(319, 74);
             tbPizzaPrice.Name = "tbPizzaPrice";
+            tbPizzaPrice.ReadOnly = true;
             tbPizzaPrice.Size = new Size(150, 31);
             tbPizzaPrice.TabIndex = 41;
             // 
@@ -393,6 +429,7 @@
             // 
             tbPastaPrice.Location = new Point(319, 30);
             tbPastaPrice.Name = "tbPastaPrice";
+            tbPastaPrice.ReadOnly = true;
             tbPastaPrice.Size = new Size(150, 31);
             tbPastaPrice.TabIndex = 40;
             // 
@@ -626,5 +663,7 @@
         private TextBox tbDiscountFood;
         private TextBox tbDiscountBeverage;
         private TextBox tbDiscountAll;
+        private Label label19;
+        private Label label20;
     }
 }

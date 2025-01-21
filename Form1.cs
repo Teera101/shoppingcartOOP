@@ -2,9 +2,41 @@
 {
     public partial class Form1 : Form
     {
+        Item itemCoffee = new Item();
+        Item itemGreentea = new Item();
+        Item itemPasta = new Item();
+        Item itemPizza = new Item();
         public Form1()
         {
             InitializeComponent();
+            //add data to object
+            itemCoffee.name = "Coffee";
+            itemCoffee.price = 75;
+            itemCoffee.quantity = 0;
+
+            itemGreentea.name = "Greentea";
+            itemGreentea.price = 65;
+            itemGreentea.quantity = 0;
+
+            itemPasta.name = "Pasta";
+            itemPasta.price = 120;
+            itemPasta.quantity = 0;
+
+            itemPizza.name = "Pizza";
+            itemPizza.price = 240;
+            itemPizza.quantity = 0;
+            //display data
+            tbCoffeePrice.Text = itemCoffee.price.ToString();
+            tbCoffeeQuantity.Text = itemCoffee.quantity.ToString();
+
+            tbGreenteaPrice.Text = itemGreentea.price.ToString();
+            tbGreenteaQuantity.Text = itemGreentea.quantity.ToString();
+
+            tbPastaPrice.Text = itemPasta.price.ToString();
+            tbPastaQuantity.Text = itemPasta.quantity.ToString();
+
+            tbPizzaPrice.Text = itemPizza.price.ToString();
+            tbPizzaQuantity.Text = itemPizza.quantity.ToString();
         }
         private int CalculateTotal()
         {
@@ -78,7 +110,7 @@
                 change %= denominations[i];
             }
         }
-        
+
         private bool ValidateInputs()
         {
 
@@ -147,9 +179,9 @@
 
             DisplayChangeBreakdown(iChange);
         }
-    
 
-    
+
+
 
         private void tbCoffeeQuantity_TextChanged(object sender, EventArgs e)
         {
@@ -159,6 +191,14 @@
         private void label10_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void chbCoffee_CheckedChanged(object sender, EventArgs e)
+        {
+            itemCoffee.ischeked = chbCoffee.Checked;
+            itemGreentea.ischeked= chbGreentea.Checked;
+            itemPasta.ischeked = chbPasta.Checked;
+            itemPizza.ischeked = chbPizza.Checked;
         }
     }
 }
